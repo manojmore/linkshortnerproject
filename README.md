@@ -10,7 +10,7 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
+# ornpm i -D drizzle-kit tsx
 bun dev
 ```
 
