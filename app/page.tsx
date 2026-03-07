@@ -129,13 +129,13 @@ export default async function Home() {
 
         {/* How It Works Section */}
         <section className="px-6 py-20 md:py-32 bg-gray-50 dark:bg-black">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
                 How It Works
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400">
-                Get started in three simple steps.
+                Get started in three simple steps and start managing your links effectively.
               </p>
             </div>
 
@@ -144,30 +144,52 @@ export default async function Home() {
                 {
                   step: '1',
                   title: 'Paste Your URL',
-                  description: 'Paste any long URL into LinkShortner. It takes just a few seconds.',
+                  description: 'Paste any long URL into LinkShortner. Our system instantly validates and analyzes your link to ensure it\'s safe and accessible. It takes just a few seconds, and you can shorten as many links as you need.',
+                  details: [
+                    'Supports any valid URL format',
+                    'Instant validation and verification',
+                    'No character limits'
+                  ]
                 },
                 {
                   step: '2',
                   title: 'Customize (Optional)',
-                  description: 'Add custom aliases or let us generate a short code automatically.',
+                  description: 'Create a memorable, custom short code for your link or let our intelligent system generate one automatically. Personalized links are great for branding and marketing campaigns.',
+                  details: [
+                    'Create branded short links',
+                    'Auto-generated codes available',
+                    'Alphanumeric characters supported'
+                  ]
                 },
                 {
                   step: '3',
                   title: 'Share & Track',
-                  description: 'Copy your shortened link and share it everywhere. Monitor clicks in real-time.',
+                  description: 'Copy your shortened link with one click and share it everywhere—social media, emails, marketing campaigns, and more. Watch real-time analytics as your link gains traction and engagement.',
+                  details: [
+                    'One-click copying to clipboard',
+                    'Real-time click tracking',
+                    'Geographic and referrer insights'
+                  ]
                 },
               ].map((item, index) => (
-                <div key={index} className="flex gap-6">
+                <div key={index} className="flex gap-6 p-6 rounded-lg border border-gray-200 dark:border-zinc-800 hover:border-blue-300 dark:hover:border-blue-700 transition-all">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 dark:bg-blue-500 text-white font-bold">
                       {item.step}
                     </div>
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400">{item.description}</p>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">{item.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {item.details.map((detail, detailIndex) => (
+                        <span key={detailIndex} className="inline-block px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 text-sm rounded-full border border-blue-200 dark:border-blue-800">
+                          {detail}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}
