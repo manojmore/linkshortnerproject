@@ -1,3 +1,7 @@
+---
+description : REad this before creating ui components
+---
+
 # UI Components & Form Patterns
 
 Guidelines for building React components and forms in the Link Shortener project using shadcn/ui, Tailwind CSS, and Next.js patterns.

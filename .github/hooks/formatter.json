@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [],
+    "sessionEnd": [],
+    "userPromptSubmitted": [],
+    "preToolUse": [],
+    "postToolUse": [{
+        "type": "command",
+        "bash": "npx prettier --write ."
+    }],
+    "errorOccurred": []
+  }
+}

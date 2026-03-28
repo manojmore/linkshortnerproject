@@ -1,3 +1,7 @@
+---
+description : REad this for security implementation
+---
+
 # Authentication & Routing Guidelines
 
 ## Authentication Overview
