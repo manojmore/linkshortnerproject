@@ -1,7 +1,7 @@
 import { auth } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 import { SignInButton, SignUpButton } from '@clerk/nextjs';
-import { Link2, BarChart3, Lock, Zap, Copy, Share2 } from 'lucide-react';
+import { Link2, PieChart, Lock, Zap } from 'lucide-react';
 
 export default async function Home() {
   const { userId } = await auth();
@@ -17,8 +17,8 @@ export default async function Home() {
       description: 'Convert long URLs into short, shareable links in just one click.',
     },
     {
-      icon: BarChart3,
-      title: 'Click Analytics',
+      icon: PieChart,
+      title: 'Analytics',
       description: 'Track clicks, geographic data, and referrers for each shortened link.',
     },
     {
@@ -30,16 +30,6 @@ export default async function Home() {
       icon: Zap,
       title: 'Lightning Fast',
       description: 'Optimized performance ensures your redirects happen instantly.',
-    },
-    {
-      icon: Copy,
-      title: 'Easy to Copy',
-      description: 'One-click copying makes sharing your shortened links effortless.',
-    },
-    {
-      icon: Share2,
-      title: 'Share Everywhere',
-      description: 'Perfect for social media, emails, marketing campaigns, and more.',
     },
   ];
 
