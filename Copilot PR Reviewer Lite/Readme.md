@@ -21,7 +21,7 @@ This prompt can then be pasted into Copilot Chat to perform a detailed code revi
 ## ⚙️ Steps to Use the Tool
 
 1. Download **DevTools.rar** from:
-   https://github.com/manojmore/linkshortnerproject/tree/feature/code_review_test
+   https://github.com/manojmore/linkshortnerproject/tree/feature/code_review_test/Copilot%20PR%20Reviewer%20Lite
 
 2. Unzip the file to a local directory (e.g., `C:\DevTools\AI-PR-Reviewer`)
 
